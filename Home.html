@@ -11,6 +11,8 @@
 	<script type="text/javascript" src="popper.js"></script>
 	<script type="text/javascript" src="bootstrap.js"></script>	
 	<link rel="stylesheet" type="text/css" href="Master.css">	<style type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 	
     <style>
         .carousel-item img {
@@ -84,63 +86,79 @@
 
     <section>
         <div class="container">
-            <div id="demo" class="carousel carousel-fade" data-bs-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
 
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
 
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+
+            <li data-target="#demo" data-slide-to="1"></li>
+
+            <li data-target="#demo" data-slide-to="2"></li>
+
+        </ul>
+
+        <!-- Slideshow -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <a href="HealthyFood.html">
+                    <img src="./img/HealthyEating2.jpg" class="d-block w-100" alt="Healthy Eating">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>
+                        <a href="HealthyFood.html" style="color:white; text-decoration:none;">
+                            Healthy Food
+                        </a>
+                    </h1>
                 </div>
+            </div>
 
-                <!-- The slideshow -->
-                <div class="carousel-inner">
+            <div class="carousel-item">
+                <a href="GoodHabit.html">
+                    <img src="./img/Lifestyle.jpg" class="d-block w-100" alt="Good Habits">
+                </a>
 
-                    <div class="carousel-item active">
-                        <a href="HealthyFood.html">
-                            <img src="./img/HealthyEating2.jpg" class="d-block w-100" alt="Healthy Eating">
+                <div class="carousel-caption">
+                    <h1>
+                        <a href="GoodHabit.html" style="color:white; text-decoration:none;">
+                            Good Habits for a Healthy Life
                         </a>
-
-                        <div class="carousel-caption">
-                            <h1>
-                                <a href="HealthyFood.html" style="color:white; text-decoration:none;">
-                                    Healthy Food
-                                </a>
-                            </h1>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="GoodHabit.html">
-                            <img src="./img/Lifestyle.jpg" class="d-block w-100" alt="Good Habits for a Healthy Life">
-                        </a>
-
-                        <div class="carousel-caption">
-                            <h1>
-                                <a href="GoodHabit.html" style="color:white; text-decoration:none;">
-                                    Good Habits for a Healthy Life
-                                </a>
-                            </h1>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="Yoga.html">
-                            <img src="./img/yoga2.jpg" class="d-block w-100" alt="Yoga for Healthy Living">
-                        </a>
-
-                        <div class="carousel-caption">
-                            <h1>
-                                <a href="Yoga.html" style="color:white; text-decoration:none;">
-                                    Yoga for Healthy Living
-                                </a>
-                            </h1>
-                        </div>
-                    </div>
-
+                    </h1>
                 </div>
+            </div>
 
+            <div class="carousel-item">
+                <a href="Yoga.html">
+                    <img src="./img/yoga2.jpg" class="d-block w-100" alt="Yoga">
+                </a>
+
+                <div class="carousel-caption">
+                    <h1>
+                        <a href="Yoga.html" style="color:white; text-decoration:none;">
+                            Yoga for Healthy Living
+                        </a>
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+</div>
                 <!-- Controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
